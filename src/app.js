@@ -5,13 +5,13 @@ let noun = ['jogger', 'racoon'];
 function generadorDeDominios(pronous, adjs, nouns){
   let dominios=[];
   
-  for(let pron in pronous){
+  for(let pron of pronous){
 
-    for(let ad in adjs){
+    for(let ad of adjs){
 
-      for(let nou in nouns){
+      for(let nou of nouns){
         //dominios.push(`www.${pron}${ad}${nou}.com`)
-        dominios.push("www."+pron+ad+nou+".com")
+        dominios.push("www."+pron+ad+nou+".com");
       }
     }
     
